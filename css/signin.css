@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.sign-in{
+    width: 70%;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sign-in hr{
+    width: 20%;
+    height: 1px;
+    background-color: black;
+}
+
+.sign-in form{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.sign-in form section{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sign-in form input{
+    outline: none;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sign-in form section .input-password{
+    position: relative;
+}
+
+.sign-in form section .input-password i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sign-in form section .input-password input{
+    padding-right: 35px;
+}
+
+.sign-in form button{
+    padding: 5px 40px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: white;
+}
+
+@media screen and (min-width: 640px){
+    .sign-in{
+        width: 60%;
+    }
+
+    .sign-in form{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sign-in{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .sign-in{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width:  1280px){
+    .sign-in{
+        width: 32%;
+    }
+
+}
