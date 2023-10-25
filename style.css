@@ -1,0 +1,615 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  color: white;
+  z-index: 20;
+  /* background-color: green	; */
+}
+
+.navbar h1 {
+  font-size: 20px;
+}
+
+.navbar_toggle {
+  width: 40px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar_toggle_item {
+  background-color: white;
+  width: 100%;
+  height: 4.5px;
+  border-radius: 5px;
+}
+
+.navbar_toggle_item_first-mid {
+  width: 60%;
+  background-color: white;
+  align-self: flex-start;
+  height: 4.5px;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+.navbar_toggle_item_last {
+  width: 60%;
+  align-self: flex-end;
+  height: 4.5px;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.1s linear;
+}
+
+.navbar_toggle_item-full {
+  width: 100%;
+}
+
+/* menu */
+
+.navbar_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+.navbar_menu_list {
+  margin-top: 10px;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar_menu_list li {
+  border-bottom: 1px solid transparent;
+}
+
+.navbar_menu_list li:hover {
+  border-bottom: 1px solid white;
+}
+
+.navbar_menu_list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_menu-hidden {
+  opacity: 0;
+  transform: translateY(-120%);
+}
+
+/* header */
+
+.header {
+  height: 80vh;
+  background-image: url("./img/header-banner.jpg");
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  position: relative;
+  z-index: -2;
+}
+
+.header_layar {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+}
+
+.header .header_text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.header p {
+  font-size: 5vw;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 5px;
+}
+
+.header h1 {
+  font-size: 10vw;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* about */
+
+.about {
+  background-color: #176b87;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about .about_text h2 {
+  font-size: 5vw;
+  margin: auto;
+}
+
+.about .about_text p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+  color: #dadada;
+  margin-top: 10px;
+}
+
+.about_card {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about_card figure {
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+  width: 150px;
+  height: 200px;
+}
+
+.about_card figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.about_card figure figcaption {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.wisata {
+	margin-top: 120px;
+}
+.wisata_tempat_title {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 170px;
+  color: #04364a;
+}
+.list_daerah {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 110px;
+  width: min-content;
+  margin: auto;
+  padding: 5px;
+}
+.card {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.273);
+  backdrop-filter: blur(6px);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.wisata_jawa_image {
+  background: url("/img/borobusur.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.wisata_bali_image {
+  background: url("/img/pura-ulun-danu-bratan-bali-hindu-temple-surrounded-by-flowers-bratan-lake.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.wisata_papua_image {
+  background: url("/img/Raja_Ampat.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.cover {
+  background-color: rgba(0, 0, 0, 0.308);
+  border-radius: 20px;
+  width: 300px;
+  height: 350px;
+}
+.wisata_daerah_title {
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  top: 290px;
+  color: white;
+}
+
+.rekomendasi_wisata{
+	margin-top: 120px;
+}
+.rekomendasi_wisata_title {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 170px;
+  color: #04364a;
+}
+
+.list_rekomendasi_wisata {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 110px;
+  width: min-content;
+  margin: auto;
+  padding: 5px;
+}
+
+.wisata_rekomendasi_card {
+  width: 300px;
+  height: 350px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: #212121;
+  border: 2px solid #000000;
+  transition: all 0.5s ease;
+}
+.rekomendasi_wisata_image_ijen {
+  width: 300px;
+  height: 240px;
+  background: url("/img/ijen.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.rekomendasi_wisata_image_toba {
+  width: 300px;
+  height: 240px;
+  background: url("/img/toba.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.rekomendasi_wisata_image_pantai_labengki {
+  width: 300px;
+  height: 240px;
+  background: url("/img/PantaiLabengki.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.rekomendasi_wisata_info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* justify-content: center; */
+  justify-content: space-around;
+  padding: 15px;
+  height: 150px;
+  gap: 3px;
+  text-align: center;
+}
+
+.rekomendasi_wisata_tempat_title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rekomendasi_wisata_tempat_deskripsi {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: black;
+}
+.rekomendasi_wisata_rating{
+	padding: 10px;
+}
+
+.wisata_rekomendasi_card:hover {
+  box-shadow: 5px 5px 10px 0px #00000066;
+}
+
+.wisata_rekomendasi_card:hover .image {
+  filter: brightness(0.8);
+}
+
+.wisata_rekomendasi_card:hover .title {
+  color: #000000;
+}
+
+
+footer{
+	margin-top: 50px;
+	padding: 40px;
+	background-color: #176B87;
+}
+.footer_title{
+	text-align: center;
+	color: white;
+	font-size: 26px;
+	font-weight: 500;
+	padding: 10px;
+}
+.footer_sosial_media{
+	display: flex;
+	width: 400px;
+	font-size: 20px;
+	padding: 20px;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	margin: auto;
+	justify-content: space-between;
+}
+
+/* responsive break point */
+
+@media screen and (min-width: 640px) {
+  .header p {
+    font-size: 4vw;
+  }
+  .header h1 {
+    font-size: 8vw;
+  }
+  .about .about_text h2 {
+    font-size: 4vw;
+    width: 400px;
+  }
+  .list_daerah{
+	display: none;
+	flex-direction:column ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header p {
+    font-size: 3vw;
+  }
+  .header h1 {
+    font-size: 7vw;
+  }
+
+  .about .about_text h2 {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    height: 45vh;
+  }
+
+  .about .about_text {
+    padding-top: 50px;
+  }
+
+  .about .about_text h2 {
+    font-size: 3vw;
+    text-align: start;
+    width: 380px;
+  }
+
+  .about .about_text p {
+    text-align: start;
+  }
+
+  .about_card {
+    justify-content: space-evenly;
+    width: 60%;
+  }
+
+  .about_card figure {
+    width: 250px;
+    height: 300px;
+  }
+
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .navbar_toggle {
+    display: none;
+  }
+
+  .navbar_menu {
+    opacity: 1;
+    position: static;
+    transform: translateY(0%);
+    height: fit-content;
+    width: 40%;
+    background-color: transparent;
+  }
+
+  .navbar_menu_list {
+    margin-top: 0;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header p {
+    font-size: 2vw;
+  }
+  .header h1 {
+    font-size: 6vw;
+  }
+  .about .about_text h2 {
+    font-size: 2vw;
+  }
+}
