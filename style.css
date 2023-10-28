@@ -325,7 +325,7 @@ table {
 }
 .wisata_tempat_title {
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: #04364a;
@@ -341,7 +341,7 @@ table {
   padding: 5px;
 }
 .card {
-  width: 360px;
+  width: 330px;
   height: 200px;
   text-align: center;
   cursor: pointer;
@@ -387,14 +387,14 @@ table {
 .cover {
   background-color: rgba(0, 0, 0, 0.308);
   border-radius: 20px;
-  width: 360px;
+  width: 330px;
   height: 200px;
 }
 .wisata_daerah_title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   position: relative;
-  top: 150px;
+  top: 160px;
   color: white;
 }
 
@@ -404,7 +404,7 @@ table {
 
 .rekomendasi_wisata_title {
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: #04364a;
@@ -422,8 +422,8 @@ table {
 }
 
 .wisata_rekomendasi_card {
-  width: 360px;
-  height: 210px;
+  width: 330px;
+  height: 300px;
   background: #ffffff;
   border-radius: 15px;
   overflow: hidden;
@@ -432,18 +432,18 @@ table {
   justify-content: center;
   position: relative;
   color: #212121;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   transition: all 0.5s ease;
 }
 .rekomendasi_wisata_tempat_title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
 }
 
 .rekomendasi_wisata_tempat_deskripsi {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   color: black;
 }
@@ -453,7 +453,7 @@ table {
 
 .rekomendasi_wisata_image_ijen {
   width: auto;
-  height: 240px;
+  height: 280px;
   background: url("/img/ijen.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -461,7 +461,7 @@ table {
 }
 .rekomendasi_wisata_image_toba {
   width: auto;
-  height: 240px;
+  height: 280px;
   background: url("/img/toba.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -469,7 +469,7 @@ table {
 }
 .rekomendasi_wisata_image_pantai_labengki {
   width: auto;
-  height: 240px;
+  height: 280px;
   background: url("/img/PantaiLabengki.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -501,27 +501,26 @@ table {
 
 footer {
   margin-top: 50px;
-  padding: 40px;
+  padding: 15px;
   background-color: #176b87;
 }
 .footer_title {
   text-align: center;
   color: white;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   padding: 10px;
   margin-bottom: 4%;
 }
 .footer_sosial_media {
   display: flex;
-  width: 400px;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 8px;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* responsive break point */
@@ -569,7 +568,7 @@ footer {
 
   .wisata_rekomendasi_card {
     width: 470px;
-    height: 250px;
+    height: 300px;
   }
   .rekomendasi_wisata_tempat_title {
     font-size: 25px;
@@ -577,8 +576,15 @@ footer {
 
   .rekomendasi_wisata_tempat_deskripsi {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 17px;
+  }
+  .footer_title {
+    font-size: 25px;
+  }
+  .footer_sosial_media {
+    width: 80%;
+    font-size: 18px;
   }
 }
 
@@ -607,26 +613,38 @@ footer {
     margin: auto;
   }
   .card {
-    width: 200px;
+    width: 230px;
     height: 260px;
   }
   .cover {
-    width: 200px;
+    width: 230px;
     height: 260px;
   }
   .wisata_daerah_title {
-    top: 200px;
+    top: 220px;
     font-size: 30px;
   }
 
-  .rekomendasi_wisata_title {
-    padding: 20px;
+  .rekomendasi_wisata_tempat_title {
     font-size: 30px;
+  }
+
+  .rekomendasi_wisata_tempat_deskripsi {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
   }
 
   .wisata_rekomendasi_card {
-    width: 400px;
-    height: 250px;
+    width: 470px;
+    height: 350px;
+  }
+  .footer_title {
+    font-size: 30px;
+  }
+  .footer_sosial_media {
+    width: 70%;
+    font-size: 20px;
   }
 }
 
@@ -690,7 +708,7 @@ footer {
     padding: 20px;
     font-size: 30px;
     text-align: left;
-    margin-left: 44px;
+    margin-left: 50px;
   }
   .list_daerah {
     width: 90%;
@@ -710,6 +728,37 @@ footer {
     top: 260px;
     font-size: 35px;
   }
+  .rekomendasi_wisata_title {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 45px;
+  }
+  .wisata_rekomendasi_card {
+    width: 320px;
+    height: 400px;
+  }
+  .list_rekomendasi_wisata {
+    flex-direction: row;
+    grid-column-gap: 20px;
+    width: min-content;
+    margin: auto;
+    padding: 5px;
+  }
+  .rekomendasi_wisata_tempat_title {
+    font-size: 30px;
+  }
+
+  .rekomendasi_wisata_tempat_deskripsi {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .footer_title {
+    font-size: 35px;
+  }
+  .footer_sosial_media {
+    width: 60%;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -726,7 +775,7 @@ footer {
     padding: 20px;
     font-size: 30px;
     text-align: left;
-    margin-left: 130px;
+    margin-left: 100px;
   }
   .list_daerah {
     flex-direction: row;
@@ -751,7 +800,7 @@ footer {
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 170px;
+    margin-left: 100px;
     text-align: left;
   }
 
@@ -765,8 +814,8 @@ footer {
   }
 
   .wisata_rekomendasi_card {
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 430px;
   }
 
   .rekomendasi_wisata_tempat_title {
@@ -776,9 +825,16 @@ footer {
   }
 
   .rekomendasi_wisata_tempat_deskripsi {
-    font-size: 17px;
+    font-size: 20px;
   }
   .rekomendasi_wisata_rating {
     padding: 10px;
+  }
+  .footer_title {
+    font-size: 35px;
+  }
+  .footer_sosial_media {
+    width: 60%;
+    font-size: 25px;
   }
 }
