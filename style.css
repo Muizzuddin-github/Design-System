@@ -335,7 +335,7 @@ table {
   display: flex;
   flex-direction: column;
   grid-template-columns: auto auto auto;
-  grid-row-gap: 20px;
+  grid-row-gap: 10px;
   width: min-content;
   margin: auto;
   padding: 5px;
@@ -372,6 +372,13 @@ table {
 }
 .wisata_papua_image {
   background: url("/img/Raja_Ampat.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.wisata_sulawesi_image {
+  background: url("/img/PantaiLabengki.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -593,12 +600,11 @@ footer {
     text-align: center;
   }
   .list_daerah {
-    width: 90%;
+    width: 70%;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    grid-row-gap: 20px;
   }
   .card {
     width: 200px;
@@ -687,21 +693,21 @@ footer {
     margin-left: 44px;
   }
   .list_daerah {
+    width: 90%;
     flex-direction: row;
     flex-wrap: unset;
     margin: auto;
-    grid-row-gap: 20px;
   }
   .card {
-    width: 300px;
-    height: 260px;
+    width: 240px;
+    height: 300px;
   }
   .cover {
-    width: 300px;
-    height: 260px;
+    width: 240px;
+    height: 300px;
   }
   .wisata_daerah_title {
-    top: 210px;
+    top: 260px;
     font-size: 35px;
   }
 }
@@ -726,17 +732,18 @@ footer {
     flex-direction: row;
     flex-wrap: unset;
     margin: auto;
+    
   }
   .card {
-    width: 300px;
-    height: 350px;
+    width: 260px;
+    height: 310px;
   }
   .cover {
-    width: 300px;
-    height: 350px;
+    width: 260px;
+    height: 310px;
   }
   .wisata_daerah_title {
-    top: 290px;
+    top: 270px;
     font-size: 40px;
   }
 
